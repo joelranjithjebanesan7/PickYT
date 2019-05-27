@@ -1,6 +1,7 @@
 count = {}
 
-def find_substring(string):
+def find_substring():
+    string = input("Enter the sring : ")
     for i in string:
         if i in count:
             count[i] += 1
@@ -8,5 +9,4 @@ def find_substring(string):
             count[i] = 1
     return len(count.keys())
 
-string = 'bcaacbc'
-print(find_substring(string))
+print(find_substring())
